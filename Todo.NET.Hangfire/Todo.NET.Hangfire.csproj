@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>toilavinh.Todo.NET.Hangfire</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>toilavinh</Authors>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Hangfire" Version="1.8.12" />
+      <PackageReference Include="Hangfire.Dashboard.Basic.Authentication" Version="7.0.1" />
+      <PackageReference Include="Hangfire.Mongo" Version="1.10.4" />
+    </ItemGroup>
+
+</Project>

@@ -1,8 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Extensions", "Todo.NET.Extensions\Todo.NET.Extensions.csproj", "{54DDA5E3-749B-4E15-9152-B5F6EADE3418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Hangfire", "Todo.NET.Hangfire\Todo.NET.Hangfire.csproj", "{035CC0A9-E290-46C8-B595-83D0BA92126C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54DDA5E3-749B-4E15-9152-B5F6EADE3418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54DDA5E3-749B-4E15-9152-B5F6EADE3418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54DDA5E3-749B-4E15-9152-B5F6EADE3418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54DDA5E3-749B-4E15-9152-B5F6EADE3418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{035CC0A9-E290-46C8-B595-83D0BA92126C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035CC0A9-E290-46C8-B595-83D0BA92126C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035CC0A9-E290-46C8-B595-83D0BA92126C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035CC0A9-E290-46C8-B595-83D0BA92126C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
