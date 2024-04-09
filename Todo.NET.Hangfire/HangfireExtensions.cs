@@ -13,12 +13,10 @@ namespace Todo.NET.Hangfire;
 public static class HangfireExtensions
 {
     public static IServiceCollection AddHangfireMongo(this IServiceCollection services,
-                                                              string prefix,
-                                                              Action<HangfireMongoConfig> databaseConfig)
+                                                      string prefix,
+                                                      string connectionString,
+                                                      string databaseName)
     {
-        var mongoConfig = new HangfireMongoConfig();
-        databaseConfig(mongoConfig);
-        
         services
             .AddHangfire(
                 config =>
@@ -27,8 +25,8 @@ public static class HangfireExtensions
                         .UseSimpleAssemblyNameTypeSerializer()
                         .UseRecommendedSerializerSettings()
                         .UseMongoStorage(
-                            new MongoClient(mongoConfig.ConnectionString),
-                            mongoConfig.DatabaseName,
+                            new MongoClient(connectionString),
+                            databaseName,
                             new MongoStorageOptions
                             {
                                 MigrationOptions = new MongoMigrationOptions
@@ -45,22 +43,22 @@ public static class HangfireExtensions
         return services;
     }
     
-    public static WebApplication UseHangfireManagement(this WebApplication app, Action<HangfireConfig> config)
+    public static WebApplication UseHangfireManagement(this WebApplication app, 
+                                                       string title, 
+                                                       string userName, 
+                                                       string password)
     {
-        var hangfireConfig = new HangfireConfig();
-        config(hangfireConfig);
-        
         app.UseHangfireDashboard(
-            hangfireConfig.DashboardPath,
+            "/hangfire",
             new DashboardOptions
             {
-                DashboardTitle = hangfireConfig.Title,
+                DashboardTitle = title,
                 Authorization = new[]
                 {
                     new HangfireCustomBasicAuthenticationFilter
                     {
-                        User = hangfireConfig.Authentication.UserName,
-                        Pass = hangfireConfig.Authentication.Password
+                        User = userName,
+                        Pass = password
                     }
                 },
                 IgnoreAntiforgeryToken = true

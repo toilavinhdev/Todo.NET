@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Hangfire", "Todo.N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.WebSockets", "Todo.NET.WebSockets\Todo.NET.WebSockets.csproj", "{C335772B-AA61-4F80-A8E3-6D9D8B57D299}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Security", "Todo.NET.Security\Todo.NET.Security.csproj", "{A5DCB20A-7896-420C-BB91-981927EE019E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C335772B-AA61-4F80-A8E3-6D9D8B57D299}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C335772B-AA61-4F80-A8E3-6D9D8B57D299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C335772B-AA61-4F80-A8E3-6D9D8B57D299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5DCB20A-7896-420C-BB91-981927EE019E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DCB20A-7896-420C-BB91-981927EE019E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DCB20A-7896-420C-BB91-981927EE019E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DCB20A-7896-420C-BB91-981927EE019E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
