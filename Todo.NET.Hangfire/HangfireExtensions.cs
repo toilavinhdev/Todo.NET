@@ -12,6 +12,21 @@ namespace Todo.NET.Hangfire;
 
 public static class HangfireExtensions
 {
+    public static IServiceCollection AddHangfireMongo(this IServiceCollection services, Action<HangfireMongoOptions> options)
+    {
+        var mongo = new HangfireMongoOptions();
+        options.Invoke(mongo);
+        services.AddHangfireMongo(mongo.Prefix, mongo.ConnectionString, mongo.DatabaseName);
+        return services;
+    }
+    
+    public static IServiceCollection AddHangfireMongo(this IServiceCollection services, HangfireMongoOptions options)
+    {
+        services.AddHangfireMongo(options.Prefix, options.ConnectionString, options.DatabaseName);
+        return services;
+    }
+    
+    
     public static IServiceCollection AddHangfireMongo(this IServiceCollection services,
                                                       string prefix,
                                                       string connectionString,
@@ -43,13 +58,28 @@ public static class HangfireExtensions
         return services;
     }
     
+    public static WebApplication UseHangfireManagement(this WebApplication app, Action<HangfireDashboardConfig> config)
+    {
+        var hangfire = new HangfireDashboardConfig();
+        config.Invoke(hangfire);
+        app.UseHangfireManagement(hangfire.Path, hangfire.Title, hangfire.UserName, hangfire.Password);
+        return app;
+    }
+
+    public static WebApplication UseHangfireManagement(this WebApplication app, HangfireDashboardConfig config)
+    {
+        app.UseHangfireManagement(config.Path, config.Title, config.UserName, config.Password);
+        return app;
+    }
+    
     public static WebApplication UseHangfireManagement(this WebApplication app, 
+                                                       string path,
                                                        string title, 
                                                        string userName, 
                                                        string password)
     {
         app.UseHangfireDashboard(
-            "/hangfire",
+            path,
             new DashboardOptions
             {
                 DashboardTitle = title,

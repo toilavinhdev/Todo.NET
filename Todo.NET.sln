@@ -8,6 +8,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.WebSockets", "Todo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Security", "Todo.NET.Security\Todo.NET.Security.csproj", "{A5DCB20A-7896-420C-BB91-981927EE019E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Redis", "Todo.NET.Redis\Todo.NET.Redis.csproj", "{049550F6-12BB-4FB5-8D11-5957BBAED7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Tests", "Todo.NET.Tests\Todo.NET.Tests.csproj", "{4F202072-E3B3-44DF-A1A3-14A0C5CD14A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Encryptor", "Todo.NET.Encryptor\Todo.NET.Encryptor.csproj", "{79844F63-DAFA-4503-81AC-45D7D7C5D807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.Mongo", "Todo.NET.Mongo\Todo.NET.Mongo.csproj", "{09795954-1F18-4BC1-8792-9373D1726CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.NET.RabbitMQ", "Todo.NET.RabbitMQ\Todo.NET.RabbitMQ.csproj", "{82E83F3E-5870-45B5-96CD-47AE02D978DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +40,25 @@ Global
 		{A5DCB20A-7896-420C-BB91-981927EE019E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5DCB20A-7896-420C-BB91-981927EE019E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5DCB20A-7896-420C-BB91-981927EE019E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049550F6-12BB-4FB5-8D11-5957BBAED7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049550F6-12BB-4FB5-8D11-5957BBAED7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049550F6-12BB-4FB5-8D11-5957BBAED7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049550F6-12BB-4FB5-8D11-5957BBAED7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F202072-E3B3-44DF-A1A3-14A0C5CD14A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F202072-E3B3-44DF-A1A3-14A0C5CD14A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F202072-E3B3-44DF-A1A3-14A0C5CD14A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F202072-E3B3-44DF-A1A3-14A0C5CD14A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79844F63-DAFA-4503-81AC-45D7D7C5D807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79844F63-DAFA-4503-81AC-45D7D7C5D807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79844F63-DAFA-4503-81AC-45D7D7C5D807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79844F63-DAFA-4503-81AC-45D7D7C5D807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09795954-1F18-4BC1-8792-9373D1726CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09795954-1F18-4BC1-8792-9373D1726CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09795954-1F18-4BC1-8792-9373D1726CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09795954-1F18-4BC1-8792-9373D1726CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82E83F3E-5870-45B5-96CD-47AE02D978DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E83F3E-5870-45B5-96CD-47AE02D978DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E83F3E-5870-45B5-96CD-47AE02D978DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E83F3E-5870-45B5-96CD-47AE02D978DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

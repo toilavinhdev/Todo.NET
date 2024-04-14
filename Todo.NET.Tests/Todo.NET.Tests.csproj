@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todo.NET.Extensions\Todo.NET.Extensions.csproj" />
+      <ProjectReference Include="..\Todo.NET.Hangfire\Todo.NET.Hangfire.csproj" />
+      <ProjectReference Include="..\Todo.NET.Redis\Todo.NET.Redis.csproj" />
+      <ProjectReference Include="..\Todo.NET.Security\Todo.NET.Security.csproj" />
+      <ProjectReference Include="..\Todo.NET.WebSockets\Todo.NET.WebSockets.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+</Project>
